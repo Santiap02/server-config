@@ -1,30 +1,29 @@
 
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3090/agenda2?serverTimezone=UTC
-    hikari:
-      username: root
-      password: admin
-  jpa:
-    hibernate:
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3090/agenda2?serverTimezone=UTC
+  hikari:
+    username: root
+    password: admin
+jpa:
+  hibernate:
+    naming:
+      implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: Test3
-      auto-index-creation: true
+data:
+  mongodb:
+    host: localhost
+    port: 27017
+    database: Test3
+    auto-index-creation: true
 
-  servlet:
-    multipart:
-      max-file-size: 256MB
-      max-request-size: 256MB
-      enabled: true
-
-  eureka:
-    client:
-      service-url:
-        defaultZone: http://localhost:8761/eureka
+servlet:
+  multipart:
+    max-file-size: 256MB
+    max-request-size: 256MB
+    enabled: true 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
