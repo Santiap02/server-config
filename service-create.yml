@@ -23,9 +23,8 @@
       max-file-size: 256MB
       max-request-size: 256MB
       enabled: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
 
-
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka
