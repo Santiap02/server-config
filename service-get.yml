@@ -15,7 +15,7 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: Test3
+      database: Test4
       auto-index-creation: true
 
   servlet:
